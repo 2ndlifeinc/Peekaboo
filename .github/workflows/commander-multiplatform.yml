@@ -57,7 +57,7 @@ jobs:
             --sdk "$SDK_PATH"
 
   linux:
-    runs-on: [self-hosted, Linux]
+    runs-on: [self-hosted, macos-or-linux]
     needs: macos-host
     steps:
       - uses: actions/checkout@v4
